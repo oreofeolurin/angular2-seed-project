@@ -20,6 +20,6 @@ export class TruncatePipe {
 			return value;
 		}
 
-		return value.substring(0, length) + suffix;
+		return (value.substring(0, length).trim()) + suffix;
 	}
 }
